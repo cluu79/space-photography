@@ -1,3 +1,6 @@
+body{
+  overflow-x:hidden ;
+}
 
 
 /* NavBar*/
@@ -75,6 +78,33 @@
   }
 
 }
+
+/* footer*/
+
+footer{
+  // background-color: rgb(24, 23, 23);
+  background: url('../images/portrait.jpg');
+  color: #fff;
+}
+
+// About US
+
+#page-header{
+  height: 300px;
+  background: url('../images/about-us-businessman-card-533405.jpg');
+  // background-position: 0 -360px;
+  background-attachment: fixed;
+  color:rgb(20, 7, 7);
+  border-bottom: 1px #eee solid;
+  background-size: 100%;
+  // background-repeat: no-repeat;
+  
+  padding-top: 50px;
+
+}
+
+
+
 
 
 
