@@ -105,6 +105,101 @@
     </div>
   </section>
 
+  <!-- Maybe a home header -->
+  <section id="home-icons" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4 text-center">
+          <i class="fas fa-plane fa-3x mb2">
+            
+          </i>
+          <h3>Something here</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, enim?</p>
+        </div>
+        <div class="col-md-4 mb-4 text-center">
+          <i class="fas fa-cloud fa-3x mb2">
+          
+          </i>
+          <h3>Something here</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, enim?</p>
+        </div>
+        <div class="col-md-4 mb-4 text-center">
+          <i class="fas fa-cart-plus fa-3x mb2">
+          
+          </i>
+          <h3>Something here</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, enim?</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Overlay SECTION -->
+  <section id="home-heading" class="p-5">
+    <div class="dark-overlay">
+      <div class="row">
+        <div class="col">
+          <div class="container pt-5">
+            <h1>Lets go and get some travel</h1>
+            <p class="d-none d-md-block">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus excepturi aliquid ratione eum et tempora, soluta consequatur doloremque in aut.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INFO -->
+  <section id="info" class="py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 align-self-center">
+          <h3>Lorem Ispum</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi accusantium voluptate itaque earum, quas obcaecati necessitatibus. Iure dolores quos odit.</p>
+          <a href="about.html" class="btn btn-outline-danger btn-lg">Learn More</a>
+        </div>
+        <div class="col-md-6">
+          <img src="./images/camera.jpg" alt="" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Maybe Add some Videos? -->
+  <section id="video-play">
+    <div class="dark-overlay">
+      <div class="row">
+        <div class="col">
+          <div class="container p-5">
+            <a href="#" class="video" 
+            data-video="https://www.youtube.com/embed/PW8tr4j1ZWE" 
+            data-toggle="modal" 
+            data-target="#videoModal">
+
+              <i class="fas fa-play fa-3x"></i>
+            </a>
+            <h1>See the Stars!</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div class="modal fade" id="videoModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+          <iframe src="" frameborder="0" height="350" width="100%" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <script src="http://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -118,6 +213,26 @@
   <script>
     // Get the current year for the copyright
     $('#year').text(new Date().getFullYear());
+
+    //configure Slider
+    $('.carousel').carousel({
+      interval: 6000,
+      pause: 'hover'
+    })
+
+    //video Play
+    $(function(){
+      $(".video").click(function(){
+        var theModal = $(this).data("target"),
+        videoSRC = $(this).attr("data-video"),
+        videoSRCauto = videoSRC + "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
+        $(theModal + ' iframe').attr('src', videoSRCauto);
+        $(theModal + ' button.close').click(function(){
+          $(theModal + 'iframe').attr('src', videoSRC);
+        })
+      })
+    })
+
   </script>
 </body>
 

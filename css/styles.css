@@ -10,6 +10,7 @@
   border-left: #444 3px solid;
 }
 
+/* Carousel*/
 .carousel-item {
   height: 75vh;
 }
@@ -27,5 +28,41 @@
 .carousel-image-3 {
   background: url("../images/3648x5472.jpg");
   background-size: cover;
+}
+
+/* Home*/
+#home-heading {
+  min-height: 200px;
+  background: url("../images/portrait.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  text-align: center;
+  position: relative;
+  color: #fff;
+}
+
+#home-heading .dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* Video*/
+#video-play {
+  min-height: 200px;
+  background: url("../images/2000x1086.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  text-align: center;
+  position: relative;
+  color: #fff;
+  background-position: 0 -300px;
+}
+
+#video-play a {
+  color: #fff;
 }
 /*# sourceMappingURL=styles.css.map */
