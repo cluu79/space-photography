@@ -1,0 +1,41 @@
+
+
+/* NavBar*/
+
+.navbar{
+
+  .nav-link{
+    font-size: 14px;
+   text-transform: uppercase;
+   padding-left: 1rem !important;
+   padding-right: 1rem !important;
+
+  }
+  .nav-item.active{
+    border-left: #444 3px solid;
+  }
+  
+}
+
+.carousel{
+
+  &-item{
+    height: 75vh;
+  }
+  &-image-1{
+    background:url('../images/2000x1086.jpg');
+    background-size: cover;
+  }
+  &-image-2{
+    background:url('../images/3264x4697.jpg');
+    background-size: cover;
+  }
+  &-image-3{
+    background:url('../images/3648x5472.jpg');
+    background-size: cover;
+  }
+
+}
+
+
+
