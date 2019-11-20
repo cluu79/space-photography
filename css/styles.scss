@@ -30,14 +30,17 @@ body{
   &-image-1{
     background:url('../images/2000x1086.jpg');
     background-size: cover;
+    background-position: center;
   }
   &-image-2{
     background:url('../images/3264x4697.jpg');
     background-size: cover;
+    background-position: top center;
   }
   &-image-3{
     background:url('../images/3648x5472.jpg');
     background-size: cover;
+    background-position: center;
   }
 
 }
