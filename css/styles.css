@@ -16,7 +16,7 @@ body {
 
 /* Carousel*/
 .carousel-item {
-  height: 75vh;
+  height: 95vh;
 }
 
 .carousel-image-1 {
@@ -28,7 +28,6 @@ body {
 .carousel-image-2 {
   background: url("../images/3264x4697.jpg");
   background-size: cover;
-  background-position: top center;
 }
 
 .carousel-image-3 {

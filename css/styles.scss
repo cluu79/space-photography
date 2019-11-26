@@ -25,7 +25,7 @@ body{
 .carousel{
 
   &-item{
-    height: 75vh;
+    height: 95vh;
   }
   &-image-1{
     background:url('../images/2000x1086.jpg');
@@ -35,7 +35,8 @@ body{
   &-image-2{
     background:url('../images/3264x4697.jpg');
     background-size: cover;
-    background-position: top center;
+    //background-position:center;
+    
   }
   &-image-3{
     background:url('../images/3648x5472.jpg');
